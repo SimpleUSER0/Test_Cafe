@@ -1,0 +1,9 @@
+{
+  "name": "mziuri-cafe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive Georgian cafe demo — vanilla HTML, CSS and JavaScript",
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {"start": "node server.js", "check": "node --check server.js && node --check public/script.js"}
+}

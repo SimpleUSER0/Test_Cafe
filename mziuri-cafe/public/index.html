@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="მზიური — პატარა, თბილი კაფეს დემო თბილისში. ყავა, საუზმე და მშვიდი დრო ქალაქის შუაგულში.">
+  <meta name="theme-color" content="#f5f1e9"><title>მზიური • კაფე თბილისში</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">გადადით შინაარსზე</a>
+<header class="header"><div class="container nav-wrap">
+  <a class="brand" href="#home" aria-label="მზიური — მთავარი"><span class="sun" aria-hidden="true">✳</span><span>მზიური<small>CAFE · TBILISI</small></span></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="navigation" aria-label="მენიუს გახსნა"><span></span><span></span></button>
+  <nav id="navigation" aria-label="მთავარი ნავიგაცია"><a href="#about">ჩვენ შესახებ</a><a href="#menu">მენიუ</a><a href="#gallery">გალერეა</a><a href="#location">გვესტუმრე</a><a class="nav-contact" href="#contact">კონტაქტი</a></nav>
+</div></header>
+<main id="main">
+<section id="home" class="hero container">
+  <div class="hero-copy"><p class="eyebrow">შენი პატარა პაუზა თბილისში</p><h1>კარგი დღე<br>იწყება <em>ყავით.</em></h1><p class="lead">თბილი ყავა, ახალი საუზმე და ადგილი,<br class="desktop-break"> სადაც არსად გეჩქარება.</p><div class="hero-actions"><a class="button" href="#menu">დაათვალიერე მენიუ</a><a class="text-link" href="#location">იპოვე შენი ადგილი</a></div><div class="hero-note"><span aria-hidden="true">✳</span><span>ყოველდღე, 09:00–21:00<br><small>ყავა · საუზმე · კარგი განწყობა</small></span></div></div>
+  <div class="hero-image"><img src="assets/interior.webp" alt="მზით განათებული კაფეს ინტერიერის კონცეფცია" width="1200" height="900" fetchpriority="high"><div class="image-label"><span>ცოტა მზე.<br>ცოტა სიმშვიდე.</span><span aria-hidden="true">✳</span></div></div>
+</section>
+<div class="ribbon" aria-hidden="true"><span>FRESH COFFEE</span><span>✳</span><span>SLOW MORNINGS</span><span>✳</span><span>MADE WITH LOVE</span><span>✳</span><span>TBILISI, GEORGIA</span></div>
+<section id="about" class="section container about"><div><p class="eyebrow">01 / ჩვენი ამბავი</p><h2>პატარა სივრცე.<br>დიდი სითბო.</h2></div><div class="about-copy"><p>მზიური იმ დილებისთვისაა, როცა ყავის სურნელი საკმარისია კარგი დღის დასაწყებად. და იმ შუადღეებისთვის, როცა ქალაქის ხმაურს ცოტა ხნით უნდა გამოეთიშო.</p><p>შემოიარე მეგობართან ერთად, წამოიღე წიგნი ან უბრალოდ დაიკავე ადგილი ფანჯარასთან. ჩვენ ყავას მოვამზადებთ.</p><div class="values"><span>ახლად მომზადებული</span><span>ყოველდღიური საუზმე</span><span>მშვიდი გარემო</span></div></div></section>
+<section id="menu" class="menu-section"><div class="container section"><div class="section-heading"><div><p class="eyebrow">02 / მენიუ</p><h2>შენი ახალი ფავორიტი.</h2></div><p>მარტივი გემოები, გულით მომზადებული.<br><small>დემო მენიუ · ფასები ლარში</small></p></div><div class="filters" role="group" aria-label="მენიუს კატეგორია"><button class="active" data-filter="all" aria-pressed="true">ყველა</button><button data-filter="coffee" aria-pressed="false">ყავა</button><button data-filter="breakfast" aria-pressed="false">საუზმე</button><button data-filter="sweet" aria-pressed="false">დესერტი</button></div>
+<div class="menu-grid" aria-live="polite">
+<article class="menu-item" data-category="coffee"><div><h3>კაპუჩინო <span class="tag">ფავორიტი</span></h3><p>ესპრესო, რძე და ნაზი ქაფი</p></div><span class="price">8 ₾</span></article>
+<article class="menu-item" data-category="coffee"><div><h3>ლატე</h3><p>ორმაგი ესპრესო, თბილი რძე</p></div><span class="price">9 ₾</span></article>
+<article class="menu-item" data-category="coffee"><div><h3>ამერიკანო</h3><p>სუფთა, დაბალანსებული გემო</p></div><span class="price">6 ₾</span></article>
+<article class="menu-item" data-category="breakfast"><div><h3>ავოკადოს ტოსტი</h3><p>საურდოუ, ავოკადო, კვერცხი, მწვანილი</p></div><span class="price">19 ₾</span></article>
+<article class="menu-item" data-category="breakfast"><div><h3>დილის გრანოლა</h3><p>იოგურტი, სეზონური ხილი, თაფლი</p></div><span class="price">14 ₾</span></article>
+<article class="menu-item" data-category="sweet"><div><h3>კარაქის კრუასანი</h3><p>ხრაშუნა ფენები, რბილი გული</p></div><span class="price">7 ₾</span></article>
+<article class="menu-item" data-category="sweet"><div><h3>ბასკური ჩიზქეიქი</h3><p>კრემოვანი ტექსტურა, კარამელის ქერქი</p></div><span class="price">12 ₾</span></article>
+<article class="menu-item" data-category="sweet"><div><h3>შოკოლადის ქუქი</h3><p>შავი შოკოლადი და ზღვის მარილი</p></div><span class="price">6 ₾</span></article>
+</div><p class="menu-footnote">ინგრედიენტებისა და ალერგენების შესახებ ჰკითხე ბარისტას.</p></div></section>
+<section id="gallery" class="section container"><div class="section-heading"><div><p class="eyebrow">03 / პატარა მომენტები</p><h2>მზიურის განწყობა.</h2></div><p>ერთი ფინჯანი. ერთი კარგი პაუზა.</p></div><div class="gallery"><button class="gallery-item" data-image="assets/coffee.webp" data-caption="ყავა და კრუასანი"><img src="assets/coffee.webp" alt="კაპუჩინო და კრუასანი ხის მაგიდაზე" width="1000" height="1000" loading="lazy"><span>დილის რიტუალი <b aria-hidden="true">+</b></span></button><button class="gallery-item" data-image="assets/interior.webp" data-caption="ჩვენი სივრცის კონცეფცია"><img src="assets/interior.webp" alt="თბილი, თანამედროვე კაფეს ინტერიერი" width="1000" height="1000" loading="lazy"><span>შენი მშვიდი კუთხე <b aria-hidden="true">+</b></span></button><button class="gallery-item" data-image="assets/brunch.webp" data-caption="ნელი საუზმე"><img src="assets/brunch.webp" alt="ავოკადოს ტოსტი კვერცხითა და მწვანილით" width="1000" height="1000" loading="lazy"><span>გემრიელი დასაწყისი <b aria-hidden="true">+</b></span></button></div></section>
+<section id="location" class="location-section"><div class="container location"><div class="location-copy"><p class="eyebrow">04 / გვესტუმრე</p><h2>ახლოს ქალაქთან.<br>შორს აჩქარებისგან.</h2><p>თბილისი · ვაკე, მზიურის პარკის მიმდებარედ</p><p class="demo-detail">სავარაუდო ლოკაცია დემოსთვის — ზუსტი მისამართი დასამატებელია.</p><a class="button light" href="https://www.google.com/maps/search/?api=1&amp;query=Mziuri+Park+Tbilisi" target="_blank" rel="noopener noreferrer">მზიურის პარკი რუკაზე</a></div><div class="hours"><span class="eyebrow">ჩვენი კარი ღიაა</span><div><span>ორშაბათი – პარასკევი</span><strong>09:00 – 21:00</strong></div><div><span>შაბათი – კვირა</span><strong>10:00 – 21:00</strong></div><p>დილა შენია. ყავა ჩვენზე მოანდე.</p><small>დემო სამუშაო საათები</small></div></div></section>
+<section id="contact" class="section container contact"><p class="eyebrow">05 / კონტაქტი</p><h2>შევხვდეთ ყავაზე.</h2><p>კითხვა გაქვს ან მეგობრებთან ერთად მოსვლა გინდა?<br>აქ განთავსდება კაფეს ტელეფონი, ელფოსტა და Instagram.</p><div class="contact-placeholder"><span>ტელეფონი · დასამატებელია</span><span>ელფოსტა · დასამატებელია</span><span>Instagram · დასამატებელია</span></div><p class="demo-note">დემო-საიტი · მზიური გამოგონილი კაფეს კონცეფციაა. ფოტოები ილუსტრაციულია.</p></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="sun" aria-hidden="true">✳</span><span>მზიური<small>CAFE · TBILISI</small></span></a><p>ცოტა მზე შენს ყოველდღიურობაში.</p><small>© <span id="year">2026</span> მზიური · დემო</small></div></footer>
+<dialog id="lightbox" aria-labelledby="lightbox-caption"><button class="close-dialog" aria-label="ფოტოს დახურვა">×</button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+</body></html>
